@@ -13,8 +13,10 @@ import org.springframework.web.client.RestTemplate;
 import java.util.Collections;
 
 @Configuration
-@PropertySources({@PropertySource("classpath:application.properties"),
-        @PropertySource("classpath:secret.properties")})
+@PropertySources({
+        @PropertySource("classpath:application.properties"),
+        @PropertySource("classpath:secret.properties")
+})
 public class AppConfig {
     @Value("${lanitland.rgp.hrm.token}")
     private String TOKEN;
